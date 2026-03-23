@@ -1,13 +1,13 @@
 {
-    "name": "exercise_immunology",
+    "name": "applied_sportsmedicine",
     "type": "module",
     "description": "",
     "license": "CC-BY-4.0",
     "author": "CHRISTIAN PUTA",
-    "homepage": "https://chrisputa.github.io/exercise_immunology", 
+    "homepage": "https://chrisputa.github.io/applied_sportsmedicine", 
     "repository": {
         "type": "git",
-        "url": "https://github.com/chrisputa/exercise_immunology",
+        "url": "https://github.com/chrisputa/applied_sportsmedicine",
         "version": "1.0.0"
     },
     "scripts": {

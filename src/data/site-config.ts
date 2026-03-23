@@ -67,8 +67,8 @@ const siteConfig: SiteConfig = {
         alt: 't-cell logo dark'
     },
     website: 'https://chrisputa.github.io/',
-    base: '/exercise_immunology/',
-    title: 'Exercise Immunology',
+    base: '/applied_sportsmedicine/',
+    title: 'Applied Sportsmedicine',
     author: {
         name: 'Christian Puta',
         url: 'https://chrisputa.github.io/'

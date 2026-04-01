@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="en" class="antialiased break-words"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PExOL Easy Plot Tutorial</title><meta name="description" content><script>
+  (function () {
+    try {
+      const mql = window.matchMedia('(prefers-color-scheme: dark)');
+      const getStored = () => localStorage.getItem('theme');
+      const apply = (dark) => {
+        document.documentElement.classList.toggle('dark', !!dark);
+        if (typeof syncWidgetDarkMode === 'function') syncWidgetDarkMode(!!dark);
+      };
+
+      // Persisted preference; default to 'light'
+      const pref = localStorage.getItem('theme') || 'light';
+      document.documentElement.classList.toggle('dark', pref === 'dark');
+
+      // Optional: keep in sync if you add a theme toggle elsewhere
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'theme') {
+          document.documentElement.classList.toggle('dark', e.newValue === 'dark');
+        }
+      });
+
+      // Initial apply: stored preference wins, else system
+      const stored = getStored();
+      apply(stored ? stored === 'dark' : mql.matches);
+
+      // Follow system changes only when no stored preference
+      if (!stored) mql.addEventListener('change', (e) => apply(e.matches));
+
+      // React to changes from other tabs/windows
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'theme') apply(e.newValue === 'dark');
+      });
+
+      // Re-apply after Astro client-side transitions
+      document.addEventListener('astro:after-swap', () => {
+        const s = getStored();
+        apply(s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches);
+      });
+    } catch {}
+  })();
+</script><link rel="stylesheet" href="/applied_sportsmedicine/_astro/index.CyDw-pbw.css">
+<link rel="stylesheet" href="/applied_sportsmedicine/_astro/_slide_.DzFd_imp.css"></head> <body class="bg-main text-main"> <div id="slide-root" class="slide-root bg-main text-main" style="--base-w: 1920; --base-h: 1080;"> <div class="slide-stage"> <div class="h-full min-h-0 grid grid-rows-[1fr_auto] gap-6 p-8"> <div class="h-full min-h-0 overflow-hidden"> <div class="prose max-w-none w-full h-full min-h-0 overflow-auto first:mt-0 last:mb-0">  <article class="not-prose h-full min-h-0 grid place-items-center "> <div class="max-w-[80%] w-full flex flex-col gap-6 text-center items-center bg-white/60 dark:bg-neutral-900/60 rounded-3xl p-12 shadow-xl">  <p class="uppercase tracking-wide text-sm  text-center mx-auto">Tutorial</p> <h1 class=" leading-tight mx-auto text-1xl"> PExOL Easy Plot </h1> <h2 class="text-5xl font-semibold text-neutral-700 dark:text-neutral-200 leading-snug"> Summer Semester 2026 </h2> <p class="text-lg text-neutral-600 dark:text-neutral-300"> March 2026 </p> <div class="mt-2 flex flex-col items-center gap-2">  <img src="data:image/png;base64,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" alt="QR code" width="150" height="150" class="rounded shadow mt-2" loading="lazy" decoding="async"> </div> </div> </article>  </div> </div> <nav id="slide-nav" class="slide-nav shrink-0 flex items-center justify-center gap-3 " aria-label="Slide controls">   <a id="lecture-link" href="../../" class="slide-nav-btn px-4 py-3 md:px-3 md:py-2 rounded-lg border border-neutral-700 bg-neutral-900 text-neutral-100 no-underline">Tutorial</a> <p class="slide-counter">1 / 4</p> <a id="start-link" rel="start" href="../slide-1-intro/" class="slide-nav-btn px-4 py-3 md:px-3 md:py-2 rounded-lg border border-neutral-700 bg-neutral-900 text-neutral-100 no-underline">Start</a> <a id="prev-link" rel="prev" href="#" aria-disabled="true" tabindex="-1" class="slide-nav-btn px-4 py-3 md:px-3 md:py-2 rounded-lg border border-neutral-700 bg-neutral-900 text-neutral-100 no-underline aria-disabled:opacity-40 aria-disabled:pointer-events-none">Prev</a> <a id="next-link" rel="next" href="../slide-2-login/" aria-disabled="false" class="slide-nav-btn px-4 py-3 md:px-3 md:py-2 rounded-lg border border-neutral-700 bg-neutral-900 text-neutral-100 no-underline aria-disabled:opacity-40 aria-disabled:pointer-events-none">Next</a> </nav> <script>
+  (() => {
+    const back = document.getElementById('lecture-link');
+    const start = document.getElementById('start-link');
+    const prev = document.getElementById('prev-link');
+    const next = document.getElementById('next-link');
+
+    const isDisabled = (a) =>
+      !a || a.getAttribute('aria-disabled') === 'true' || a.getAttribute('href') === '#';
+
+    const shouldIgnore = (e) => {
+      const t = e.target;
+      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return true;
+      return t && (
+        t.tagName === 'INPUT' ||
+        t.tagName === 'TEXTAREA' ||
+        t.tagName === 'SELECT' ||
+        t.isContentEditable
+      );
+    };
+
+    window.addEventListener('keydown', (e) => {
+      if (shouldIgnore(e)) return;
+
+      if (e.key === 'ArrowLeft' && !isDisabled(prev)) {
+        e.preventDefault();
+        location.assign(prev.getAttribute('href'));
+      } else if (e.key === 'ArrowRight' && !isDisabled(next)) {
+        e.preventDefault();
+        location.assign(next.getAttribute('href'));
+      } else if (e.key === 'Home' && start) {
+        e.preventDefault();
+        location.assign(start.getAttribute('href'));
+      } else if (e.key === 'Escape' && back) {
+        e.preventDefault();
+        location.assign(back.getAttribute('href'));
+      }
+    });
+  })();
+</script> </div> </div> </div> <script type="module">(function(){var e=document.getElementById("slide-root");if(e){var t=getComputedStyle(e),a=parseFloat(t.getPropertyValue("--base-w"))||1920,i=parseFloat(t.getPropertyValue("--base-h"))||1080,r=function(){var o=window.innerWidth||document.documentElement.clientWidth||0,d=window.innerHeight||document.documentElement.clientHeight||0,s=Math.min(o/a,d/i),n=document.getElementById("slide-root");n&&n.style.setProperty("--slide-scale",String(s))};r(),window.addEventListener("resize",r,{passive:!0})}})();</script> </body> </html>

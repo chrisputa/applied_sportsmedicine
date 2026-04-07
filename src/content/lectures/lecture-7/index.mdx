@@ -1,6 +1,8 @@
 ---
-title: Upper Respiratory Tract Infections and Physical Activity
-description: Translates these foundations to the epidemiology and pathophysiology of upper respiratory tract infections in physically active individuals and competitive athletes, covering symptom characterization, cytokine-mediated acute phase responses, and the clinical relevance of infection foci.
+title: Exercise Snacks
+description: Presents the evidence base for Exercise Snacks — brief, intense physical activity bouts (≤1–10 min) repeated throughout the day — as a time-efficient strategy for cardiometabolic and immunological health improvement.
+  Covers effects on glucose regulation (insulin-independent GLUT4 translocation), muscular adaptations, cardiovascular risk reduction (38–49% mortality reduction from 3×1–2 min VILPA/day), and immune function (myokine signalling, NF-κB suppression).
+  Includes detailed physiological mechanism charts (energy metabolism, muscle signalling, aerobic capacity via Fick equation, immunological pathways), an interactive dashboard, and an example Exercise Snack protocol for clinical application.
 publishDate: '2026-05-22'
 draft: false
 tags:
@@ -8,342 +10,356 @@ tags:
 ---
 
 import Figure from '../../../components/Figure.astro';
-import jcurve from '../../../assets/jcurve_nieman2019_bw.png';
-import jcurveDark from '../../../assets/generated/jcurve_nieman2019_bw_dark.png';
+import fig1 from '../../../assets/L06_Fig01_ExerciseSnacks_bw_1.png';
+import fig1Dark from '../../../assets/generated/L06_Fig01_ExerciseSnacks_bw_1_dark.png';
+import fig2 from '../../../assets/L06_Fig02_ExerciseSnack_bw.png';
+import fig2Dark from '../../../assets/generated/L06_Fig02_ExerciseSnack_bw_dark.png';
+import fig3 from '../../../assets/L06_Fig03_energy_metabolism_bw.png';
+import fig3Dark from '../../../assets/generated/L06_Fig03_energy_metabolism_bw_dark.png';
+import fig4 from '../../../assets/L06_Fig04_chart2_muscle_signaling_bw.png';
+import fig4Dark from '../../../assets/generated/L06_Fig04_chart2_muscle_signaling_bw_dark.png';
+import fig5 from '../../../assets/L06_Fig05_chart3_aerobic_capacity_bw.png';
+import fig5Dark from '../../../assets/generated/L06_Fig05_chart3_aerobic_capacity_bw_dark.png';
+import fig6 from '../../../assets/L06_Fig06_chart4_immune_signaling_bw.png';
+import fig6Dark from '../../../assets/generated/L06_Fig06_chart4_immune_signaling_bw_dark.png';
 
 
-## 1 Epidemiology of Respiratory Infections
+**From:** Puta C, Reuken P, Katzer K, Gabriel M, Dudziak D, Stallmach A. *Exercise Snacks.* Friedrich-Schiller-University Jena / University Hospital Jena, 2025.
 
-Common colds, flu-like infections, and true influenza are, alongside gastrointestinal infections, the most frequent infections. Approximately 200 different virus types are responsible for upper respiratory tract infections. Adults experience approximately 2--5 upper respiratory infections per year; school-age children are estimated to have 7--10 colds annually (Johnston and Holgate 1996; Eccles 2005).
+¹ Friedrich-Schiller-University Jena, Chair for Sports Medicine and Health Promotion
+² Department of Internal Medicine IV (Gastroenterology, Hepatology, Infectious Diseases, Interdisciplinary Endoscopy), University Hospital Jena, Germany
+³ Interdisciplinary Centre for Post-Infectious Long-Term Consequences, University Hospital Jena, Germany
+⁴ Institute for Immunology, University Hospital Jena, Germany
 
-The classic transmission routes are droplet infections. Bacterial infections frequently follow viral infections due to impairment of the mucous membrane by the viral infection. Fungal infections occur only in immunocompromised individuals (Puta et al. 2026).
+---
 
-It is estimated that acute respiratory tract infections (ARTI) are caused by viruses in over 80% of cases. The most common viruses infecting athletes are the same as those in the general population and include rhinoviruses, non-SARS coronaviruses, influenza A and B, and respiratory syncytial virus (RSV) (Schwellnus et al. 2022).
+## Lecture 6 Table of Contents
 
-### 1.1 Historical Context of Exercise Immunology Research
+1. [Introduction](#1-introduction)
+2. [Definition and Characterisation](#2-definition-and-characterisation)
+3. [Effects of Exercise Snacks](#3-effects-of-exercise-snacks-energy-metabolism-musculature-cardiovascular-aspects-immunological-signalling-pathways)
+   - 3.1 [Exercise Snacks and Energy Metabolism](#31-exercise-snacks-and-energy-metabolism-glucose-regulation-and-insulin-sensitivity)
+   - 3.2 [Exercise Snacks and Muscular Adaptations](#32-exercise-snacks-and-muscular-adaptations)
+   - 3.3 [Exercise Snacks and Cardiovascular Diseases](#33-exercise-snacks-and-cardiovascular-diseases)
+   - 3.4 [Effects on Immune Function and Inflammatory Markers](#34-effects-on-immune-function-and-inflammatory-markers)
+4. [Exercise Snacks — Physiological Effects of Short Training Bouts](#4-exercise-snacks--physiological-effects-of-short-training-bouts)
+   - 4.1 [Energy Metabolism](#41-energy-metabolism)
+   - 4.2 [Muscle Structure & Function](#42-muscle-structure--function)
+   - 4.3 [Aerobic Capacity](#43-aerobic-capacity)
+   - 4.4 [Immunological Signalling Pathways](#44-immunological-signalling-pathways)
+   - 4.5 [Interactive Dashboard — Physiological Mechanisms](#45-interactive-dashboard--physiological-mechanisms)
+   - 4.6 [Summary](#46-summary)
+5. [Conclusion](#5-conclusion)
+6. [Example Exercise Snack Protocol](#6-example-exercise-snack-protocol)
 
-Exercise immunology emerged as a distinct scientific discipline in the late twentieth century, with approximately 90% of all publications appearing after 1990 (Nieman and Wentz 2019). However, the earliest observations date to 1902, when Larrabee noted that white blood cell differential counts in Boston Marathon runners paralleled those seen in certain disease states (Larrabee 1902).
+---
 
-Four broad research periods can be distinguished: (1) 1900--1979, characterised by basic immune cell counts in exercising subjects; (2) 1980--1989, with the advent of flow cytometry and the first systematic investigations linking exercise to acute respiratory illness; (3) 1990--2009, when the field expanded to include nutritional immunology, exercise and aging, and inflammatory cytokine responses; and (4) 2010 to present, marked by multi-omics approaches, metabolomics, and personalised exercise immunology (Nieman and Wentz 2019).
+## 1 Introduction
 
-Notably, a 1984 review published in JAMA in preparation for the Los Angeles Olympic Games concluded that there was "no clear experimental or clinical evidence that exercise will alter the frequency or severity of human infections" (Simon 1984) — a conclusion that motivated the subsequent decades of targeted research that now provides a far more nuanced picture.
+Imagine the following situation: A 53-year-old patient with arterial hypertension, a prediabetic metabolic state (HbA1c 6.4% or 47 mmol/l) at a BMI of 31.4 kg/m² (105 kg at 183 cm), waist circumference ~100 cm (notable visceral abdominal fat), engages in only light physical activity in daily life (approx. 2000–4000 steps per day). Your patient works as a deputy branch manager in banking. You discuss the importance of physical activity in the context of prediabetes, arterial hypertension, and recommend "Exercise Snacks" as a starting point for a meaningful prevention programme. The patient says: "No, I unfortunately don't have time for that! You know, I have so much to do professionally?" Your answer: Start with "Exercise Snacks." The patient says: "What is that? — I have never heard of that."
 
-## 2 Symptom Characterization: Early and Late Symptoms
+**Aim** of this article is to present the significance of small exercise bouts — "Exercise Snacks" or "Exercise Bouts" — in an evidence-based manner and to provide an exemplary case. In particular, the cardiorespiratory, cardiometabolic and immunological adaptations through "Exercise Snacks" should motivate the integration of brief, repeated strenuous exertions into everyday life [1, 2, 3]. The implementation of "Exercise Snacks" could be a *key strategy for starting* or resuming physical activity [1].
 
-Sneezing reaches its highest values within the first two days after infection and then declines. Coughing, in contrast, increases continuously and can persist for up to 3 weeks. Additional symptoms include: nasal congestion, sinus pain, watery eyes, and headaches. Approximately 50% of affected individuals exhibit muscle and joint pain (Puta et al. 2026; Barrett et al. 2002, 2005).
+---
 
-### 2.1 Detailed Organ-Specific Symptom Catalogue
+## 2 Definition and Characterisation
 
-A comprehensive organ-by-organ classification of URTI symptoms aids differential diagnosis and supports the "neck check" rule used in return-to-sport decisions (Puta et al. 2026, Tab. 22.5):
+Without doubt, there is a need for practical recommendations for physical activity that simultaneously improve cardiorespiratory fitness and reduce the effects of physical inactivity on cardiometabolic health. "Exercise Snacks" are defined as isolated, brief, intense exertions that can be performed multiple times per day [4]. They are particularly effective around mealtimes to maximise metabolic effects. Implementing Exercise Snacks can not only promote physical fitness but also provide significant benefits for immuno-metabolic and cardiometabolic health, as demonstrated in a comprehensive meta-analysis [5].
 
-| Body region | Signs and symptoms |
-|---|---|
-| Head/Forehead | Headache, dizziness |
-| Eyes | Swollen, watery, itching, painful or burning eyes |
-| Nose | Nasal congestion (impaired nasal breathing), sniffling ("runny nose"), partial or complete loss of smell |
-| Ears | Blocked ears (impaired hearing), earache or pressure on ears |
-| Mouth/Throat/Neck | Hoarseness, sore throat, tonsillar swelling/redness/coating, difficulty swallowing, painful anterior cervical lymph nodes, toothache, partial or complete loss of taste, blue lips or oral mucosa (cyanosis) |
-| Face | Sensation of congestion or swelling in the facial area, facial pain (mainly upper jaw and forehead), unusual facial pallor, increased discomfort when bending the head forward |
+**Typical format:** One of the first protocols for Exercise Snacks comprised an 11-minute bout of exertion (6 × 1-minute snacks with 1-minute recovery phases) plus a 5-minute warm-up and a 3-minute cool-down, performed three times per day before meals [2]. Exercise Snacks involve brief phases (≤1 min) of physical activity at high intensity (≥64% VO₂peak, ≥77% of maximal heart rate) [5]. Later studies extended the concept to short (&lt;10-minute) phases distributed across the morning and afternoon [1, 2, 3, 6].
 
-This level of clinical detail is essential for sports medicine practitioners making training and competition decisions. Knowing these symptoms by body region helps differentiate URTI from other conditions such as allergies, sinusitis, or early manifestations of systemic infection.
+**Simple execution:** Simple exercise forms include stair climbing, short sprints, intensive uphill walking intervals, or exercises using one's own body weight (e.g. 1 minute of sit-to-stand) [1].
 
-## 3 Cytokines and Acute Phase Response
+---
 
-The proinflammatory cytokines IL-1 and IL-6 are most significant for fever. Cytokines can cross the blood-brain barrier and, in interaction with the vagus nerve, influence temperature regulation via the hypothalamus. Psychological effects include malaise, attention deficits, mood changes, and altered social interaction (Leon 2002; Mahoney and Ball 2002; Smith et al. 1998).
+## 3 Effects of Exercise Snacks: Energy Metabolism, Musculature, Cardiovascular Aspects, Immunological Signalling Pathways
 
-### 3.1 Immunometabolism: The Exercise-Induced Perturbation in Metabolites
+Figure 1 summarises the evidence-based effects of "Exercise Snacks."
 
-In athletes exercising intensely for more than 2 hours, significant increases in at least 300 identified metabolites can be measured as body glycogen stores are depleted. There is an extensive increase in numerous and varied lipid superpathway metabolites, including oxidised derivatives called oxylipins (Nieman and Wentz 2019).
-
-Exercise-induced muscle tissue injury and inflammation elicit a strong innate immune response involving granulocytes, monocytes, and macrophages. Immune-specific proteins are produced to regulate the innate immune response, with oxylipins playing a key role in initiating, mediating, and resolving this process. Most of the expressed immune-related proteins — including lysozyme C, neutrophil elastase, defensin 1, proteins S100-A8/A12, cathelicidin antimicrobial peptide, α-actinin-1, and profilin-1 — are involved with pathogen defense, immune cell chemotaxis, and locomotion (Nieman and Wentz 2019; Markworth et al. 2016).
-
-This profound, exercise-induced perturbation in metabolites, lipid mediators, and proteins more than likely has a direct influence on immune function, decreasing the capacity of immune cells to increase oxygen consumption rates after activation. This concept is termed **immunometabolism** (Nieman and Wentz 2019).
-
-### 3.2 Immune Cell Metabolic Capacity and Transient Dysfunction
-
-In response to an immunological challenge such as exercise stress, immune cells must engage in growth and proliferation to generate effector cells that produce specific molecules such as cytokines and proteins. This immune activation is associated with substantial oxygen and biosynthetic demands. Immune cells must engage in metabolic reprogramming to generate sufficient energy (Nieman and Wentz 2019).
-
-Preliminary data support that immune cell metabolic capacity is decreased during recovery from physiologically demanding bouts of intensive exercise, resulting in transient immune dysfunction. Immunonutrition support — especially increased intake of carbohydrate and polyphenols — has been shown to counter these exercise-induced decrements in immune cell metabolic capacity (Nieman and Wentz 2019; Nieman et al. 2018).
-
-## 4 Respiratory Infections and Competitive Sports
-
-Respiratory infections represent, alongside injuries, the most frequent cause of training and competition absences in competitive sports. Acute respiratory tract infections (ARTI) are a common reason for physician visits among athletes — during Olympic competitions, they account for approximately 50% of medical consultations. The overall incidence is approximately 1.8 infections per athlete per year with an average symptom duration of 7.1 days (Schwellnus et al. 2022; Snyders et al. 2022).
-
-### 4.1 Epidemiological Evidence from Major Sporting Events
-
-A substantial body of epidemiological research has established the link between heavy exertion and elevated URTI risk in athletes (Nieman and Wentz 2019):
-
-| Study | Population | Key finding |
-|---|---|---|
-| Peters and Bateman (1983) | 141 ultramarathon runners vs. 124 controls | Illness incidence 2× higher in runners after 56-km race (33% vs. 15%) |
-| Nieman et al. (1990b) | 2,311 marathon runners (Los Angeles Marathon) | Illness incidence 6× higher in finishers vs. non-running controls (13% vs. 2%); runners training ≥97 km/week vs. &lt;32 km/week at higher URTI risk |
-| Heath et al. (1991) | 530 runners | Running >780 km/year increased risk of URTI (odds ratio 2.0) |
-| Konig et al. (2000) | 852 German athletes | Illness incidence 2× higher in endurance sports (OR = 2.2); 2× higher with stress (OR = 2.0); nearly 2× with sleep deprivation (OR = 1.7) |
-| Spence et al. (2007) | 20 elite, 30 recreational, 20 sedentary | Illness incidence 4× higher in elite athletes and 2× greater in sedentary controls vs. recreational athletes |
-| Engebretsen et al. (2010) | 27,245 elite athletes at Olympic Games (2010--2012) | Illness incidence 5--18%; risk factor: female sex |
-| Drew et al. (2017) | 132 elite athletes preparing for Olympics | Illness symptoms in 100% of athletes (46% upper respiratory); risk factors: female sex, low energy availability |
-
-The IOC and IAAF initiated acute illness surveillance systems revealing that 2--18% of elite athletes experience illness episodes during international competition events, with higher proportions for females and those engaging in endurance events (Schwellnus et al. 2022; Nieman and Wentz 2019).
-
-### 4.2 Risk Factors for Illness in Athletes
-
-Numerous factors beyond training load modulate infection risk in athletes. These can be categorised based on Puta et al. (2026, Tab. 22.3) and Nieman and Wentz (2019):
-
-- Insufficient physical and psychological recovery
-- Excessive training volume, duration, and intensity
-- Too frequent high-intensity anaerobic training (e.g. intensive interval training)
-- Infections, premature return to sport after infections, allergies
-- Altitude training camps
-- Psychological distress
-- Malnutrition or unbalanced nutrition before, during, and after training
-- Insufficient sleep duration, sleep quality, and irregularity
-- Insufficient consideration of the female menstrual cycle in training load management
-- Female sex
-- High levels of depression or anxiety
-- International travel across several time zones
-- Participation in competitive events especially during winter months
-- Rapid weight loss and crash diets
-
-The mismatch between current load and current load capacity is a key determinant. The subjective assessment by athlete, coach, and supervising physician regarding the scope and intensity of training loads must consider changing circumstances such as health status (Puta et al. 2026).
-
-### 4.3 Performance Consequences of URTI in Athletes
-
-The decrease in exercise performance after a URTI can last 2--4 days. Runners who start an endurance race despite systemic URTI symptoms are 2--3 times less likely to complete the race (Nieman and Wentz 2019). Paralympic athletes have unique pre-existing medical conditions that predispose them to an increased risk of illness, with incidence rates of 10.0--13.2 episodes per 1000 athlete-days in Summer and 18.7 per 1000 athlete-days in Winter Paralympic Games (Nieman and Wentz 2019).
-
-Since the emergence of SARS-CoV-2 in late 2019, it has been documented that infection with SARS-CoV-2, compared with a common ARTI, is associated with more symptoms during the acute illness as well as a significantly longer time span until return to play (on average 30 days for SARS-CoV-2 vs. 10 days for ARTI in general; Hull et al. 2022; Schwellnus et al. 2021). Krzywanski et al. (2022) reported that 88% of athletes infected with SARS-CoV-2 were impaired in their training and lost an average of 8.1 training days.
-
-### 4.4 Return to Sport After Mild/Moderate COVID-19: Recommendations and Immunological Rationale
-
-Since the initial emergence of SARS-CoV-2, the relationship between acute respiratory infection and sport has gained a new dimension of clinical relevance. Even though widespread acquired immunity has reached an endemic state, the continued evolution of variants means that understanding the immunological time course remains essential for sports medicine practitioners (Puta et al. 2026; Schwellnus et al. 2022).
-
-**Characterisation of symptoms and immunological response to COVID-19**
-
-The immunological response to SARS-CoV-2 infection follows a characteristic temporal sequence (Puta et al. 2026; Sette and Crotty 2021; Tay et al. 2020):
-
-**Minutes to approximately 2 days after infection (before symptom onset):** SARS-CoV-2 initiates infection by binding its spike protein's receptor-binding domain to the angiotensin-converting enzyme 2 (ACE2) receptor on host cells. The early innate immune response involves activation of neutrophils and monocytes through recognition of pathogen-associated or damage-associated molecular patterns within hours of infection. Resident macrophages, epithelial cells, and infiltrating cells of the innate immune system simultaneously produce chemokines and proinflammatory cytokines (IL-6, TNF, IL-1, IFNs) to create an antiviral environment and recruit additional leukocytes to the site of infection (Sette and Crotty 2021; Hope and Bradley 2021; Tay et al. 2020). The systemic rise in proinflammatory cytokine levels is responsible for the induction of "sickness behaviour" and the typical symptoms such as fever, headache, and myalgia that emerge in the first days of COVID-19 (Kelley et al. 2003; Schwellnus et al. 2022).
-
-**The acute adaptive effector response (up to approximately 10 days after symptom onset):** The first SARS-CoV-2-specific helper T cells (CD4⁺) can be detected 2--4 days after symptom onset, accompanied by a somewhat later pronounced cytotoxic T cell response (CD8⁺) (Sette and Crotty 2021). B cell expansion takes longer, with IgM and IgA antibodies first detectable 5--7 days after symptom onset and IgG antibodies 7--10 days after symptom onset. By days 6--10, the number of adaptive effector cells has reached a level sufficient to control the viral infection, with the viral load peaking around days 5--6 and approximately 90% of individuals seroconverting by day 10 through orchestrated T and B cell responses (Tay et al. 2020; Sette and Crotty 2021). Notably, a rapid SARS-CoV-2-specific CD4⁺ T cell response in acute COVID-19 has been associated with mild illness and accelerated viral clearance, whereas a conspicuous prolonged absence of SARS-CoV-2-specific CD4⁺ T cells has been associated with severe or fatal COVID-19 (Braun et al. 2020; Tan et al. 2021).
-
-**Immunological memory:** Following viral elimination, a small number of T cells form memory T cell pools that peak within 2 weeks but remain detectable more than 100 days after infection (Hope and Bradley 2021). B cells similarly differentiate into memory cells and long-lived plasma cells. This virus-specific immunological memory facilitates faster viral clearance upon second antigen contact. Accordingly, reinfections or breakthrough infections tend to be associated with milder illness and better clinical outcomes, and the clinical course of disease is generally milder in individuals who have acquired immunity through vaccination (Puhach et al. 2023; Hope and Bradley 2021).
-
-**Return to sport after SARS-CoV-2 infection — current recommendations**
-
-Athletes with mild to moderate COVID-19 symptoms should observe a training pause until complete clinical recovery and symptom resolution (Burgstahler and Niess 2021; Steinacker et al. 2022). The consensus statement by Steinacker et al. (2022), based on 18 synthesised articles and expert opinion, recommends the following graduated approach:
-
-- **Mild illness:** Training may resume after 3 consecutive symptom-free days.
-- **Asymptomatic infection:** Training should be paused for at least 3 days after diagnosis.
-- **Competition return:** Competitions should not be resumed until at least 10 symptom-free days have passed and the athlete is free of complaints and tolerating progressive load increases (Steinacker et al. 2022).
-
-Elliott et al. (2022) have further stratified these recommendations based on symptom presentation. In particular, athletes with symptoms of the lower airways ("below the neck") are recommended an initial rest period of at least 5 days, whereas athletes with symptoms confined to the upper airways ("above the neck") may continue light activities without complete exercise cessation (Elliott et al. 2022).
-
-From an immunobiological perspective, it appears advisable to find a balance between previously recommended longer rest periods and newer, more abbreviated approaches. Considering the important time windows of acute innate and adaptive immune infection regulation, **resuming activities after 10 days of rest, followed by at least 3 consecutive symptom-free days, appears to be a prudent approach** (Puta et al. 2026; Haunhorst et al. 2023a).
-
-This conservative recommendation is supported by several considerations: resumption of sporting activities during the acute infection regulation period could jeopardise viral clearance, the resolution of inflammation, and long-term athletic performance (Haunhorst et al. 2023b). Exercise-induced redistribution of effector lymphocytes mediated by catecholamine signalling, and energy allocation to working musculature via IL-6 release, could be relevant in this context (Campbell and Turner 2018; Kistner et al. 2022). Furthermore, silent hypoxia has been reported as a common feature of acute COVID-19, attributable to renin-angiotensin system dysfunction following ACE2 binding by the spike protein. Additional oxygen deficit through intensive physical exertion may consequently lead to cardiopulmonary complications (Fajloun et al. 2023).
-
-**Clinical staging and medical investigations**
-
-The return to training and competition should be staged according to WHO guidelines as asymptomatic, mild, moderate, severe, and critical (Steinacker et al. 2022; NIH 2024):
-
-| Severity | Clinical criteria | Symptom characterisation |
-|---|---|---|
-| Mild | Various signs and symptoms of COVID-19 (e.g. fever, cough, sore throat, malaise, headache, muscle pain, loss of smell/taste) but no dyspnoea or abnormal chest findings | Subfebrile temperature (&lt;38.5°C), mild cough, sore throat, mild malaise, no dyspnoea and no subjective cardiac complaints. Mild sniffles ≤3 days considered symptom-free; if persisting longer, classified as mild symptom |
-| Moderate | Lower airway involvement on clinical assessment or imaging, SpO₂ ≥94% | Pronounced malaise (fatigue symptoms), dyspnoea at rest, higher fever (>38.5°C), headache, muscle/joint/limb pain, nausea or diarrhoea. Persistent cough ≥3 days also classified as moderate |
-| Severe | SpO₂ &lt;94%, PaO₂/FiO₂ &lt;300 mmHg, respiratory rate >30/min, or lung infiltrates >50% | Hospitalisation required, up to intensive care |
-| Critical | Respiratory failure, septic shock, and/or multi-organ dysfunction | Intensive care required |
-
-Elliott et al. (2020, 2022) recommend that athletes with a complicated clinical course should undergo monitoring of inflammatory markers (e.g. C-reactive protein), respiratory function assessment (spirometry), and renal function evaluation. Steinacker et al. (2022) add that pulmonary function tests should be performed when clinical findings point to bronchial constriction or dyspnoea at rest or during exertion. Medical examinations should be considered for athletes wishing to return to competition earlier than 10 days after symptom onset, and should include a medical history, physical examination, laboratory diagnostics (differential blood count, CRP, transaminases, CK, creatinine, and troponin if cardiac complaints are present), and a resting ECG (Steinacker et al. 2022). Myocardial or pulmonary conditions may even require regular annual follow-up including ECG, echocardiography, and arterial blood gas analysis (Halle et al. 2021).
-
-**Post-COVID condition: special considerations for return to sport**
-
-Persistent cardiac symptoms during the medical evaluation process should prompt further investigations (Gluckman et al. 2022). If none of the investigations yields abnormal results and no other symptoms persist beyond 4 weeks after symptom onset, one of the described graduated return-to-sport protocols may be applied. Persistent symptoms suggestive of a post-COVID condition — such as acute exercise intolerance and post-exertional symptom exacerbation (PEM) — can represent a challenge for general physical activities and require specialised medical and sports-scientific supervision (Zhang et al. 2025; Petek et al. 2022). A recent study showed that elite athletes with post-COVID condition experienced reduced quality of life, poorer competitive performance levels, and altered training parameters, independent of sex, and that mild ongoing inflammation based on CRP levels was associated with self-reported cardiac and flu-like symptoms (Zhang et al. 2025). Latest findings suggest that the pathophysiological basis may involve tissue hypoxia and hypoperfusion due to microcirculatory disturbances, microcoagulation, morphological changes in red blood cells, vasoactive autoantibodies, and persistent immune activation (Altmann et al. 2023; Haunhorst et al. 2022; Haunhorst et al. 2024). Based on current knowledge and experience with myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), no progressive training programmes can currently be recommended for post-COVID condition (Puta et al. 2026).
-
-## 5 Infection Foci as a Cause of Infection Susceptibility
-
-In addition to allergies, infection foci can be a cause of athletes' susceptibility to infection. The search for infection foci in the area of the teeth or the upper airways is an ever-recurring task in sports medicine practice. Besides obvious and visible entry-point infections, other infectious causes in the dental area should be clarified through dental examinations. In addition to sinus infections (which can often only be diagnosed through specialist examinations), chronic tonsillitis with purulent discharge and lymph node swelling in the submandibular region represents a relatively frequent source of infection foci (Puta et al. 2026).
-
-Particular attention should be paid to potential organ-related secondary diseases (heart, kidneys, liver, spleen) to make vital diagnoses such as myocarditis in a timely manner (Puta et al. 2026).
-
-## 6 The J-Curve Model: Infection Frequency and the Exercise Workload Continuum
-
-The majority of infections in athletes are so-called banal infections with irritations in the nasopharynx, runny nose, impaired nasal breathing, and mild sore throat. General symptoms such as limb pain, chills, and fever generally do not occur (Puta et al. 2026).
-
-### 6.1 The J-Curve Model (Nieman 1994)
-
-To illustrate the relationship between sport and upper respiratory tract infection frequency, the model of the "J-shaped" curve is used (Nieman 1994; Puta et al. 2026). This model proposes three strata along the exercise workload continuum:
-
-- **Sedentary individuals** (too little activity): medium/average risk of URTI.
-- **Moderate, individually appropriate exercise**: lowest risk of infection — the protective "sweet spot." Athletes with a moderate, individually non-overtaxing training volume have a lower risk of illness.
-- **Heavy/excessive exercise** (too much): highest risk. Overtrained athletes and those performing single exhaustive bouts carry the highest risk.
-
-The model also illustrates the inverse relationship between immunity and infection frequency: as physical activity increases from sedentary to moderate levels, immunity rises and infection frequency drops. Beyond the moderate range into excessive exercise, immunity declines and infection frequency rises sharply. This dual visualisation was termed the "Immunfisch" (immune fish) by Puta et al. (2026, Abb. 22.7) because the combined curves resemble the outline of a fish.
-
-<Figure src={jcurve} srcDark={jcurveDark} alt="J-curve nieman">
-**Figure:** The curve follows the shape described in Nieman & Wentz (2019): URTI risk is **reduced ~40–50%** in the moderate exercise zone compared to sedentary individuals, then rises sharply with heavy exertion to **2–6× above normal** — matching the values cited in the paper for post-race illness incidence.
+<Figure src={fig1} srcDark={fig1Dark} alt="Evidence-based effects of Exercise Snacks">
+**Figure 1.** Summary of evidence-based effects on energy metabolism, muscular adaptations, aerobic capacity and immunological signalling pathways of Exercise Snacks (Created in BioRender. Puta, C. (2025) https://BioRender.com/nvvnmmo).
 </Figure>
 
-### 6.2 Supporting Epidemiological Evidence
+### 3.1 Exercise Snacks and Energy Metabolism (Glucose Regulation and Insulin Sensitivity)
 
-The J-curve model is supported by evidence from both randomised controlled trials and prospective epidemiological studies (Nieman and Wentz 2019):
+Brief, frequent, intensive physical exertions around mealtimes lead to reproducible improvements in postprandial glycaemia and insulin sensitivity. A crossover-design study on exercise around mealtimes reported a one-day and 24-hour reduction of mean blood glucose levels (e.g. ~0.7 mmol·L over 24 hours) and a reduction of the 3-hour postprandial blood glucose level after breakfast by ~1.4 mmol·L compared to continuous training in insulin-resistant adults [7]. Further studies confirm clinically significant benefits for blood glucose levels and more comprehensive cardiometabolic improvements. Meta-analyses demonstrate strong effects on maximal oxygen uptake (increase) and total and LDL cholesterol (decrease) [5, 8]. Protocols that reduce adipocyte size and improve glycaemic control lead to greater reductions of basal inflammatory markers [9], [10]. The superior benefit of multiple short daily snacks regarding insulin sensitivity can be lost with brief cessation of practice, indicating that chronic adaptations require continuous stimulation [10].
 
-**Randomised controlled trials demonstrating that moderate exercise reduces URTI:**
+Essential to understanding the metabolic effect of Exercise Snacks is that the brief, predominantly anaerobic lactacid exertions mostly transport glucose into the muscle cell *insulin-independently*. During exertion, GLUT4 is translocated from intracellular storage vesicles to the plasma membrane of skeletal muscle cells. The translocation is stimulated by muscle contractions and is insulin-independent. This means that both insulin and physical activity increase GLUT4 levels at the cell surface [11, 12, 13]. Studies have shown, for example, that acute physical exertion can lead to an increase in GLUT4 concentration of approximately 50% immediately after training at the cell surface [14].
 
-- Nieman et al. (1990a): 36 mildly obese sedentary women randomised to 15 weeks of moderate walking (45 min/day × 5 days/week) experienced fewer days with illness symptoms (5.1 ± 1.2 days) compared to controls (10.8 ± 2.3 days).
-- Chubak et al. (2006): 115 postmenopausal women randomised to 1 year of moderate exercise showed an illness incidence of 30% vs. 48% in controls, with a three-fold decreased risk in the final 3 months.
-- Barrett et al. (2012, 2018): 373 older adults randomised to 8 weeks of moderate sustained exercise demonstrated proportional reductions in URTI incidence (14%), days-of-illness (23%), and global severity (31%) compared with controls.
+The practical insight is that brief, intensive "Exercise Snacks" before or shortly after meals are an evidence-based, time-efficient strategy for reducing postprandial glycaemia and improving insulin-related parameters in prediabetes and risk patients [7, 5, 8, 15]. Accordingly, it is possible to very effectively influence the prediabetic risk profile of our patient. Regarding weight reduction, it is important that the Exercise Snacks be expanded to: 3 times per week 4 × 4 min at 85–95% maximal heart rate / 3 min at 60–70% of maximal heart rate (total 30–40 min). The additive effect then results in an expected reduction of visceral fat and liver fat by approximately 3%.
 
-Collectively, these randomised clinical trials (8 weeks to 1 year in length) demonstrate that moderate exercise programmes reduce URTI incidence and duration, with magnitudes of reduction (typically 40--50%) that exceed those reported for most medications and supplements (Nieman and Wentz 2019).
+### 3.2 Exercise Snacks and Muscular Adaptations
 
-**Epidemiological studies confirming the protective effect of moderate activity:**
+4 weeks of daily 5 × 1 min mornings and 5 × 1 min evenings with 1-minute pauses between exercises (sit-to-stand, seated knee extension, alternating between walking on the spot and standing TV watching) showed a 31% improvement in the 1-minute sit-to-stand test, a 6% increase in maximal leg strength and a 2% increase in thigh muscle cross-sectional area [16]. Similar to other forms of short-duration, high-intensity exercises, Exercise Snacks of large muscle groups (see Fig. 1) can, despite their brevity, activate classical intracellular signalling pathways (such as AMPK) and transcriptional regulatory factors (such as peroxisome proliferator-activated receptor gamma coactivator 1-alpha) that are involved in oxidative remodelling of muscles [17].
 
-- Nieman et al. (2011): 1,002 adults followed for 12 weeks — the number of days with URTI was 43% lower in those exercising ≥5 days/week (≥20 min aerobic exercise) compared to sedentary individuals (≤1 day/week), and 46% lower when comparing highest vs. lowest fitness tertile.
-- Weighted mean across studies: 28% reduced URTI rates in high vs. low physical activity and fitness groups (Nieman and Wentz 2019).
+The practical insight is that simple exercises involving large muscle groups counteract age-associated or, where applicable, disease-related muscle wasting (sarcopenia). The preserved muscle mass is of particular importance for immuno-metabolic effects (e.g. prediabetes, metabolic syndrome). Accordingly, our patient can also benefit from Exercise Snacks in terms of entering physical activity and gaining strength and shifting towards fat-free mass regarding overweight and associated risk factors. Muscular effects are usually more quickly noticeable (e.g. more strength) compared to the longer-term effects of weight reduction.
 
-### 6.3 Critical Appraisal of the J-Curve Model
+### 3.3 Exercise Snacks and Cardiovascular Diseases
 
-Several important caveats apply to the J-curve model (Puta et al. 2026; Nieman and Wentz 2019):
+Exercise Snacks correspond to the recently revised World Health Organisation (WHO) guidelines on physical activity and sedentary behaviour [18]. In recognition of the potential health benefits of brief strenuous physical activity, the updated recommendations of this and other organisations have removed the previous requirement that physical activity must occur in bouts of at least 10 minutes duration. The recommendations and underlying studies refer to "vigorous intermittent lifestyle physical activity (VILPA)" — i.e. strenuous intermittent physical activity in everyday life. It was impressively demonstrated using a sample of 25,241 non-athletes (mean age 61.8 years, 14,178 women / 11,063 men, UK Biobank) that [6]: i) compared to participants who did not practise "vigorous intermittent lifestyle physical activity (VILPA)," a frequency of 3 × 1–2-minute VILPA per day was associated with a 38–40% reduction in all-cause mortality risk, cancer mortality risk, and a 48–49% reduction in cardiovascular disease mortality risk; ii) a single daily duration of 4.4 minutes per day was associated with a 26–30% reduction in all-cause mortality risk, cancer mortality risk, and a 32–34% reduction in cardiovascular disease mortality risk [6]. These effects can be explained, among other things, by an increase in capillary density and mitochondrial content in the body (including in the musculature), leading to enhanced gas exchange in skeletal muscle and ultimately to increased oxygen uptake.
 
-- The IOC consensus group (Schwellnus et al. 2016) provided support for the J-curve model but cautioned that the right side of the model may not apply to elite athletes at the highest level, where high training loads are not consistently associated with an increased risk of illness.
-- Elite athletes may perceive (and report) mild infection symptoms more readily than untrained individuals, introducing reporting bias in questionnaire-based studies (Brenner et al. 1994).
-- Beyond training volume and intensity, numerous other factors modulate the immune system and must be considered (see the comprehensive risk factor list in Section 2.4.2).
-- Individual cases can deviate from the general trend. The J-curve represents a population-level didactic model, not an individual prediction tool (Puta et al. 2026).
-- The direct connection between exercise-induced immune changes and actual infection risk has not yet been fully established and will require long-term studies with large cohorts using clinically confirmed infections rather than self-reported symptoms (Nieman and Wentz 2019; Simpson et al. 2020).
+**Accordingly, our patient benefits from daily 3 × 1–2-minute strenuous Exercise Snacks *also* as a non-athlete with a marked reduction in cardiovascular risk and/or cancer risk.**
 
-Nevertheless, the J-curve illustrates the relationship between sport and upper respiratory tract infections in its basic tendency and represents a didactically effective model (Puta et al. 2026).
+### 3.4 Effects on Immune Function and Inflammatory Markers
 
-## 7 Clinical Benefits of the Exercise-Immune Relationship
+One of the most important medical discoveries of the past two decades was that the immune system and inflammatory processes are involved not only in some selected diseases but in a multitude of psychological and physical health problems that determine morbidity and mortality worldwide today [19, 20]. More than 50% of all deaths are attributable to inflammation-related diseases such as ischaemic heart disease, stroke, cancer, diabetes mellitus type 2, chronic kidney diseases, non-alcoholic fatty liver disease (NAFLD; i.e. metabolically associated fatty liver), as well as autoimmune and neurodegenerative diseases [21].
 
-### 7.1 Reduced Systemic Inflammation in Physically Active and Lean Individuals
+#### 3.4.1 Fundamental Effects of Physical Activity and the Immune System
 
-Each exercise bout causes transient increases in total white blood cells, granulocyte-related proteins, and a variety of plasma cytokines including IL-6, IL-8, IL-10, IL-18, IL-1 receptor antagonist, granulocyte colony stimulating factor, and monocyte chemoattractant protein 1. Over time, the summation of these transient responses produces an anti-inflammatory phenotype (Nieman and Wentz 2019).
+**Cell mobilisation during exertion:** Acute physical exertions (brief, interval-like, anaerobically lactacid, or continuous for at least ~20 minutes at the individual anaerobic threshold) are characterised by a transient increase of immune cells in the blood. This is based essentially on: i) the release of stress hormones adrenaline, noradrenaline and cortisol, ii) the increase in shear forces in blood vessels and tissues, and iii) the rise in blood pressure. This process depends on intensity, type and duration of the exertion.
 
-Physically fit individuals have lower resting levels of inflammatory biomarkers: serum CRP shows a 4.4-fold difference between obese individuals (mean BMI 31.7) and endurance athletes (mean BMI 23.0); plasma IL-6 shows a 1.3-fold difference (Nieman and Wentz 2019). The upper tertiles of fitness and exercise frequency are associated with reduced numbers of days with URTI: a 46% reduction for the highest vs. lowest fitness tertile and a 43% reduction for the highest vs. lowest exercise frequency tertile (Nieman et al. 2011).
+**Immune surveillance after exertion:** At the end of the exertion, some of the mobilised immune cells (lymphocytes) migrate from the blood into tissues such as lungs, bone marrow or gastrointestinal tract and provide immune surveillance there. Other immune cells (e.g. neutrophils) continue to increase in number in the blood after strenuous exertions.
 
-The persistent increase in inflammation biomarkers in physically inactive individuals is defined as chronic or systemic inflammation and is linked with multiple disorders and diseases including obesity, arthritis, atherosclerosis, cardiovascular disease, chronic kidney disease, liver disease, metabolic syndrome, insulin resistance, type 2 diabetes mellitus, sarcopenia, osteoporosis, and various types of cancers (Nieman and Wentz 2019; Gleeson et al. 2011).
+**Myokines:** Muscle contractions lead to the release of anti-inflammatory messenger substances from muscle tissue (myokines, exerkines). These act locally, for example by reducing insulin resistance of skeletal muscle. They also stimulate fat burning throughout the body and have anti-inflammatory effects.
 
-### 7.2 Exercise-Immune Linkages to Reduced Chronic Disease
+**Effects of regular physical activity on immune competence:** Regular physical activity reduces the risk of chronic diseases, particularly those associated with low-grade inflammation, such as diabetes mellitus type 2 or cardiovascular diseases. These health-promoting effects are based on enhanced immunological tissue surveillance, the altered functional state of immune cells and the stimulation of anti-inflammatory signalling pathways.
 
-There is increasing evidence that the circulation surge in cells of the innate immune system with each exercise bout, together with the anti-inflammatory and antioxidant effect of exercise training, has a summation effect over time in modulating tumorigenesis, atherosclerosis, and other disease processes. Exercise training counters the disease process by stimulating many cellular and molecular changes throughout body tissues that promote anti-inflammatory and antioxidant responses and augment immunosurveillance (Nieman and Wentz 2019; Fiuza-Luces et al. 2023).
+#### 3.4.2 Exercise Snacks: Pro- and Anti-inflammatory Effects
 
-### 7.3 Exercise, Gut Function, and the Microbiome
+The pro- and anti-inflammatory effects are context-dependent: After brief intensive exertions, there are transient interleukin-6 (IL-6) increases. With repeated "snacks," longer-term reductions of IL-6 and CRP are observed, while the effects of TNF-α are inconsistent. Brief, intensive "Exercise Snacks" can also have positive effects on immune function and inflammatory markers [2]. Studies show that "Exercise Snacks" induce acute modulation of immune signals, gene expression and microbiome-mediated signalling pathways. Review articles and mechanistic studies conceptually indicate that repeated short training can alter immunometabolic status [22, 23, 24, 25, 26].
 
-The gut microbiota influences human health and immune function, in part through the fermentation of indigestible food components in the large intestine. Recent studies indicate that exercise and physical fitness diversify the gut microbiota, enhancing the number of benign microbial communities. More human research is needed to establish whether the positive linkage between long-term exercise training and a diverse microbiome translates to improved immune function (Nieman and Wentz 2019).
+**Acute exertion-induced effects (see Fig. 2):** Exertion-induced IL-6 (myokine, exerkine) released from the muscle acts as a metabolic signal that promotes hepatic glucose production and lipolysis and, instead of promoting classical NF-κB/TNF-driven inflammation pathways in disease states, promotes anti-inflammatory mediators (IL-10, soluble TNF receptors, IL-1ra) [9]. This effect lasts approximately up to 6 hours after exertion [27], [28], [9].
 
-## 8 Nutritional Countermeasures to Exercise-Induced Immune Changes
+**Longer-term changes from Exercise Snacks:** Systematic reviews show that training programmes with Exercise Snacks can lower resting IL-6 and CRP in overweight/obese youth and adults. Combined training with calorie restriction lowers CRP and can positively influence IL-6 and TNF-α in non-sedentary adults [29], [30], [31].
 
-### 8.1 Carbohydrates Attenuate Post-Exercise Inflammation
+**Accordingly, our patient benefits from the anti-inflammatory effects of daily Exercise Snacks after exertion. This means that the signalling effect of muscle-expressed interleukin 6 is different from that of IL-6 in non-exertion-induced inflammation. Muscle-expressed IL-6 stimulates hepatic glucose production and lipolysis and induces anti-inflammatory signalling pathways (see Fig. 2). Overall, a reduction of the systemic inflammatory state is achieved.**
 
-A consistent finding is that carbohydrate intake during prolonged and intense exercise (whether from 6--8% beverages or sugar-dense fruits such as bananas) is associated with higher blood glucose and insulin levels, lower plasma stress hormones (epinephrine and cortisol), diminished fatty acid mobilisation and oxidation, and reduced inflammation as measured by a variety of biomarkers including skeletal muscle IL-6 and IL-8 mRNA, blood neutrophil and monocyte cell counts, and cytokines such as IL-6, IL-1ra, and IL-10 (Nieman and Wentz 2019; Nieman et al. 1998a, 1998b).
+<Figure src={fig2} srcDark={fig2Dark} alt="Exercise Snack protocols and anti-inflammatory efficacy">
+**Figure 2.** Exercise Snack protocols and anti-inflammatory efficacy (Data: Literature analysis). HIIT: high intensity interval training.
+</Figure>
 
-A carbohydrate intake of at least 30 g per hour can attenuate the rise in cortisol and adrenaline concentration during prolonged endurance exercise. In 2.5-hour runs, placebo-controlled comparisons showed that substitution with a 6% carbohydrate beverage significantly reduced the acute inflammatory response, with particular attenuation of interleukin-6, which plays a central role in the acute inflammatory response to exercise (Nieman et al. 1998a, 1998b; Puta et al. 2026). The effect of carbohydrate ingestion in attenuating post-exercise inflammation is strong (approximately 30--40%), especially when contrasted with water-only intake in overnight-fasted athletes (Nieman and Wentz 2019).
+---
 
-The stress hormone response (cortisol, epinephrine, norepinephrine) to prolonged continuous endurance activity is dependent on carbohydrate substitution, as demonstrated by a systematic review by Christ et al. (2024). This represents an effective nutritional strategy before and during exercise to attenuate the rise in cortisol and adrenaline levels (Puta et al. 2026; Christ et al. 2024).
+## 4 Exercise Snacks — Physiological Effects of Short Training Bouts
 
-### 8.2 Polyphenols Counter Exercise-Induced Immune Changes
+> **Definition:** Exercise snacks are brief, structured bouts of physical activity (typically 2–10 minutes) performed multiple times throughout the day as a substitute for or complement to continuous exercise sessions.
 
-Polyphenols, in particular flavonoids, have attracted attention owing to their bioactivity and related health benefits. Gut-derived phenolics circulate throughout the body after increased polyphenol intake, exerting a variety of bioactive effects that are important to athletes including anti-inflammatory, antiviral, antioxidative, and immune cell signalling effects (Nieman and Wentz 2019).
+### 4.1 Energy Metabolism
 
-Evolving data support the intake of fruits such as dates, raisins, and bananas by athletes during training to provide the sugars and polyphenols that exert anti-inflammatory influences (Nieman and Wentz 2019; Nieman et al. 2018).
+**Key outcomes:** ↓ Blood glucose · ↓ Triglycerides
 
-### 8.3 Micronutrients and Trace Elements
+Short bouts of exercise activate two parallel, insulin-independent metabolic axes that together lower plasma glucose and triglycerides within minutes.
 
-Iron occupies a special role among minerals due to the ease of detecting deficiency and its clinical relevance. Endurance athletes — especially adolescent and young adult females — are most at risk for developing manifest iron deficiency. A laboratory screen is recommended at regular intervals, at minimum annually, for preventive reasons (Haymes and Rebstock 1989; Puta et al. 2026).
+#### GLUT4 Translocation
 
-Regarding trace elements important for immune defence (selenium, zinc, copper), establishing valid correlations between infection frequency and supplementation is currently difficult. A total intake within the recommended dietary guidelines of the Deutsche Gesellschaft für Ernährung (DGE 1997) can be considered safe. Zinc acetate lozenges at doses up to 75 mg/day have been shown to positively influence the course of beginning cold symptoms, though no data specific to the intersection of infection and sport currently exist (Hemila et al. 2017; Puta et al. 2026).
+Muscle contractions raise the AMP/ATP ratio and activate Ca²⁺/calmodulin-dependent kinases, both of which trigger AMPK. Activated AMPK phosphorylates downstream targets that drive GLUT4 vesicles from intracellular depots to the plasma membrane — entirely without insulin. The result is rapid skeletal muscle glucose uptake and a fall in blood glucose. The effect sets in within minutes and persists for 1–4 hours post-exercise, making exercise snacks particularly valuable for postprandial glycaemic control in T2DM and insulin-resistant populations.
 
-A general supplementation with antioxidant vitamins for athletes cannot be recommended with adequate energy availability. In problematic cases, substitution with antioxidant vitamins (Pro-Vitamin A, Vitamin C, Vitamin E) during infection-prone seasons may be considered (Puta et al. 2026).
+#### LPL Activity
 
-## 9 Strategies for Athletes to Minimise the Risk of Impaired Immune Function
+Lipoprotein lipase (LPL) sits on the capillary endothelium of skeletal muscle and cleaves triglycerides from VLDL and chylomicron particles into free fatty acids. Muscle contractions increase LPL activity via AMPK phosphorylation and simultaneously enhance capillary perfusion, increasing substrate contact. Consequences: falling plasma triglycerides and VLDL concentrations, increased fatty acid oxidation in muscle.
 
-The following strategies are derived from Puta et al. (2026, Sections 22.6--22.7) and Nieman and Wentz (2019) and are designed to help reduce the impairment of immune function:
+#### Convergence
 
-### 9.1 Training and Competition Load Management
+Both axes share AMPK as the central sensor and converge on reduced insulin resistance and lower cardiovascular risk — the core metabolic protective effect of exercise snacks.
 
-1. Avoid very long training sessions (>2 h).
-2. Reduce psychological stress and develop appropriate coping strategies.
-3. Monitor mood, stress, and anxiety.
-4. Knowledge of the relationship between exercise intensity, volume, and activation of the sympathetic nervous system and the hypothalamic-pituitary-adrenal axis. Factors that strongly influence the stress hormone response include: fasting, low glycogen stores, dehydration, heat, cold, altitude, psychological stress, and sleep deficit.
-5. Ensure adequate sleep duration (~8 h) and sleep regularity.
-6. Avoid crash diets and rapid weight loss.
-7. Avoid/minimise contact with sick persons (adults and children).
-8. Knowledge and implementation of hygiene rules (especially oral hygiene 2× daily) and disinfection techniques (hand disinfection).
-9. Do not share drinking bottles, towels, cutlery, etc.
-10. Avoid touching hands in the nasal and oral area.
-11. Knowledge of warning signs and symptoms of infections of the upper airways and of overtraining.
+<Figure src={fig3} srcDark={fig3Dark} alt="Energy Metabolism Signaling">
+**Figure 3.** Exercise Snacks — Energy Metabolism Signaling. Both GLUT4 and LPL axes operate insulin-independently via AMPK activation, converging on reduced insulin resistance and lower cardiovascular risk.
+</Figure>
 
-### 9.2 Nutritional Strategies for Infection-Prone Athletes
+### 4.2 Muscle Structure & Function
 
-A thorough nutritional counselling for infection-prone athletes should be conducted to identify and eliminate one-sided or unfavourable dietary patterns. Nutritional protocols (analogue or digital) can be used to gain insight into potential weaknesses in nutrition in the context of exercise, training, and sport (Puta et al. 2026).
+**Key outcomes:** ↑ Maximal leg strength · ↑ Muscle cross-sectional area
 
-The most targeted measure for promoting immunity is active vaccination. Vaccination status should be reviewed according to generally accepted criteria, including for foreign travel. Passive immunisation through administration of immunoglobulins should generally be preferred over active vaccination (Puta et al. 2026).
+Muscular adaptations to exercise snacks unfold across three temporally staggered phases.
 
-Consume a well-balanced diet with sufficient energy to maintain a healthy weight, with a focus on grains, fruits, and vegetables to provide sufficient carbohydrate and polyphenols. Consider the knowledge that when taking into account the necessary recovery times and appropriate structuring of subsequent training sessions and a suitable nutritional strategy, no increased infection susceptibility results (Nieman and Wentz 2019; Puta et al. 2026).
+#### Acute Phase (minutes–hours): AMPK/PGC-1α Axis
 
-### References
+Muscle contractions activate AMPK, which phosphorylates PGC-1α and drives its nuclear translocation. In the nucleus, PGC-1α co-activates PPARγ and initiates transcription of mitochondrial and myofibrillar genes. Simultaneously, neuromuscular recruitment improves fiber conduction velocity.
 
-- Altmann DM, Whettlock EM, Liu S, Arachchillage DJ, Boyton RJ (2023) The immunology of long COVID. *Nat Rev Immunol* 23(10):618-634.
-- Barrett B, Locken K, Maberry R, Schwamman J, Brown R et al. (2002) The Wisconsin upper respiratory symptom survey (WURSS): a new research instrument for assessing the common cold. *J Fam Pract* 51:265.
-- Barrett B, Brown R, Mundt M, Safdar N, Dye L et al. (2005) The Wisconsin upper respiratory symptom survey is responsive, reliable, and valid. *J Clin Epidemiol* 58:609-617.
-- Barrett B et al. (2012) Meditation or exercise for preventing acute respiratory infection: a randomized controlled trial. *Ann Fam Med* 10(4):337-346.
-- Barrett B et al. (2018) Meditation or exercise for preventing acute respiratory infection (MEPARI-2): a randomized controlled trial. *PLoS One* 13(6):e0197778.
-- Braun J, Loyal L, Frentsch M et al. (2020) SARS-CoV-2-reactive T cells in healthy donors and patients with COVID-19. *Nature* 587(7833):270-274.
-- Brenner IK, Shek PN, Shephard RJ (1994) Infection in athletes. *Sports Med* 17(2):86-107.
-- Burgstahler C, Niess AM (2021) Return to Sports nach COVID-19. *Sports Orthop Traumatol* 37:249-254.
-- Campbell JP, Turner JE (2018) Debunking the myth of exercise-induced immune suppression: redefining the impact of exercise on immunological health across the lifespan. *Front Immunol* 9:648.
-- Christ T, Ringleb M, Haunhorst S, Fennen L, Jordan PM, Wagner H, Puta C (2024) The acute effects of pre- and mid-exercise carbohydrate ingestion on the immunoregulatory stress hormone release in experienced endurance athletes -- a systematic review. *Front Sports Act Living* 26(6):1264814.
-- Chubak J et al. (2006) Moderate-intensity exercise reduces the incidence of colds among postmenopausal women. *Am J Med* 119(11):937-942.
-- DGE (1997) Empfehlungen für die Nährstoffzufuhr. Frankfurt.
-- Drew M et al. (2017) Prevalence of illness, poor mental health and sleep quality and low energy availability prior to the 2016 Summer Olympic Games. *Br J Sports Med* 52(1):47-53.
-- Eccles R (2005) Understanding the symptoms of the common cold and influenza. *Lancet Infect Dis* 5:718-725.
-- Elliott N, Martin R, Heron N, Elliott J, Grimstead D, Biswas A (2020) Infographic. Graduated return to play guidance following COVID-19 infection. *Br J Sports Med* 54(19):1174-1175.
-- Elliott N, Biswas A, Heron N, Ranson C, Hull J, Martin R, Elliott J (2022) Graduated return to play after SARS-CoV-2 infection -- what have we learned and why we've updated the guidance. *Br J Sports Med* 56(1):4-11.
-- Engebretsen L et al. (2010) Sports injuries and illnesses during the Winter Olympic Games 2010. *Br J Sports Med* 44:772-780.
-- Fajloun Z, Abi Khattar Z, Kovacic H, Legros C, Sabatier JM (2023) Why do athletes develop very severe or fatal forms of COVID after intense exercise following SARS-CoV-2 infection or anti-covid vaccination? *Infect Disord Drug Targets* 23(4):e110123212563.
-- Fiuza-Luces C, Valenzuela PL, Galvez BG, Ramirez M, Lopez-Soto A, Simpson RJ, Lucia A (2023) The effect of physical exercise on anticancer immunity. *Nat Rev Immunol*.
-- Gleeson M, Bishop NC, Stensel DJ, Lindley MR, Mastana SS et al. (2011) The anti-inflammatory effects of exercise: mechanisms and implications for the prevention and treatment of disease. *Nat Rev Immunol* 11:607-615.
-- Gluckman TJ, Bhave NM, Allen LA et al. (2022) ACC Expert Consensus Decision Pathway on Cardiovascular Sequelae of COVID-19 in Adults. *J Am Coll Cardiol* 79(17):1717-1756.
-- Halle M, Bloch W, Niess AM, Predel H, Reinsberger C, Scharhag J, Steinacker J, Wolfarth B, Scherr J, Niebauer J (2021) Exercise and sports after COVID-19 -- guidance from a clinical perspective. *Transl Sports Med* 4:310-318.
-- Haunhorst S, Bloch W, Wagner H, Ellert C, Kruger K, Vilser DC, Finke K, Reuken P, Pletz MW, Stallmach A, Puta C (2022) Long COVID: a narrative review of the clinical aftermaths of COVID-19 with a focus on the putative pathophysiology and aspects of physical activity. *Oxf Open Immunol* 3(1):iqac006.
-- Haunhorst S, Bloch W, Drube S, Baumgarten S, Pletz MW, Gabriel HHW, Puta C (2023a) Current re- to sports recommendations after non-severe COVID-19 from an exercise immunology perspective: a scoping review. *Sports Orthop Traumatol*.
-- Haunhorst S, Bloch W, Puta C (2023b) Recovery and the immune system. In: Kellmann M, Beckmann J (Hrsg) The importance of recovery for physical and mental health: negotiating the effects of under-recovery. Routledge.
-- Haunhorst S, Dudziak D, Scheibenbogen C et al. (2024) Towards an understanding of physical activity-induced post-exertional malaise: Insights into microvascular alterations and immunometabolic interactions in post-COVID condition and myalgic encephalomyelitis/chronic fatigue syndrome. *Infection* 53(1):1-13.
-- Haymes EM, Rebstock S (1989) Iron loss in runners during exercise. *Sports Med* 7(5):277-285.
-- Heath GW et al. (1991) Exercise and the incidence of upper respiratory tract infections. *Med Sci Sports Exerc* 23(2):152-157.
-- Hemila H, Fitzgerald JT, Petrus EJ, Prasad A (2017) Zinc acetate lozenges may improve the recovery rate of common cold patients: an individual patient data meta-analysis. *Open Forum Infect Dis* 4(2):ofx059.
-- Hope JL, Bradley LM (2021) Lessons in antiviral immunity. *Science* 371(6528):464-465.
-- Hull JH, Wootten M, Moghal M et al. (2022) Clinical patterns, recovery time and prolonged impact of COVID-19 illness in international athletes: the UK experience. *Br J Sports Med* 56(1):4-11.
-- Johnston SL, Holgate ST (1996) Epidemiology of viral respiratory infections. In: Myint S, Taylor-Robinson D (eds) *Viral and other infections of the human respiratory tract*. Chapman & Hall.
-- Kelley KW, Bluthe RM, Dantzer R, Zhou JH, Shen WH, Johnson RW, Broussard SR (2003) Cytokine-induced sickness behavior. *Brain Behav Immun* 17(Suppl 1):S112-S118.
-- Kistner TM, Pedersen BK, Lieberman DE (2022) Interleukin 6 as an energy allocator in muscle tissue. *Nat Metab* 4(2):170-179.
-- Konig D et al. (2000) Upper respiratory tract infection in athletes: influence of lifestyle, type of sport, training effort, and immunostimulant intake. *Exerc Immunol Rev* 6:102-120.
-- Krzywanski J, Mikulski T, Krysztofiak H et al. (2022) Elite athletes with COVID-19 -- Predictors of the course of disease. *J Sci Med Sport* 25(1):9-14.
-- Larrabee RC (1902) Leucocytosis after violent exercise. *J Med Res* 7:76-82.
-- Leon LR (2002) Invited review: cytokine regulation of fever: studies using gene knockout mice. *J Appl Physiol* 92:2648-2655.
-- Mahoney T, Ball P (2002) Common respiratory tract infections as psychological entities: a review of the mood and performance effects of being ill. *Aust Psychol* 37:86-94.
-- Markworth JF et al. (2016) Emerging roles of pro-resolving lipid mediators in immunological and adaptive responses to exercise-induced muscle injury. *Exerc Immunol Rev* 22:110-134.
-- NIH (2024) COVID-19 Treatment Guidelines Panel. Coronavirus Disease 2019 (COVID-19) Treatment Guidelines. National Institutes of Health.
-- Nieman DC (1994) Exercise, upper respiratory tract infection, and the immune system. *Med Sci Sports Exerc* 26(2):128-139.
-- Nieman DC, Wentz LM (2019) The compelling link between physical activity and the body's defense system. *J Sport Health Sci* 8(3):201-217.
-- Nieman DC et al. (1990a) The effects of moderate exercise training on natural killer cells and acute upper respiratory tract infections. *Int J Sports Med* 11(6):467-473.
-- Nieman DC et al. (1990b) Infectious episodes in runners before and after the Los Angeles Marathon. *J Sports Med Phys Fitness* 30(3):316-328.
-- Nieman DC, Brindley Gardner HE et al. (1998a) Carbohydrate affects natural killer cell redistribution but not activity after running. *Med Sci Sports Exerc* 29:1318-1324.
-- Nieman DC, Nehlsen-Cannarella SL et al. (1998b) Influence of mode and carbohydrate on the cytokine response to heavy exertion. *Med Sci Sports Exerc* 30(5):671-678.
-- Nieman DC et al. (2011) Upper respiratory tract infection is reduced in physically fit and active adults. *Br J Sports Med* 45(12):987-992.
-- Nieman DC et al. (2018) Metabolomics-based analysis of banana and pear ingestion on exercise performance and recovery. *J Proteome Res* 14(12):5367-5377.
-- Petek BJ, Moulson N, Baggish AL et al. (2022) ORCCA Investigators. Prevalence and clinical implications of persistent or exertional cardiopulmonary symptoms following SARS-CoV-2 infection in 3597 collegiate athletes. *Br J Sports Med* 56(16):913-918.
-- Peters EM, Bateman ED (1983) Ultramarathon running and upper respiratory tract infections: an epidemiological survey. *S Afr Med J* 64:582-584.
-- Puhach O, Meyer B, Eckerle I (2023) SARS-CoV-2 viral load and shedding kinetics. *Nat Rev Microbiol* 21(3):147-161.
-- Puta C, Haunhorst S, Gabriel HHW (2026) Sport und Immunsystem. In: Wonisch M et al. (eds) *Kompendium der Sportmedizin*. Springer.
-- Puta C, Haunhorst S, Bloch W (2021) Post-akutes COVID-19 ("long-COVID"): Andauernde Symptome, mögliche Ursachen und symptomgeleitetes post-akut COVID-19 Management zur Wiedererlangung der körperlichen Leistungsfähigkeit (Scoping Review). *Sports Orthop Traumatol* 37:214-225.
-- Schwellnus M, Sewry N, Snyders C et al. (2016) How much is too much? IOC consensus statement on load in sport and risk of illness. *Br J Sports Med* 50:1043-1052.
-- Schwellnus M, Sewry N, Snyders C et al. (2021) Symptom cluster is associated with prolonged return-to-play in symptomatic athletes with acute respiratory illness (including COVID-19). *Br J Sports Med* 55(20):1144-1152.
-- Schwellnus M, Adami PE, Bougault V et al. (2022) International Olympic Committee (IOC) consensus statement on acute respiratory illness in athletes part 1: acute respiratory infections. *Br J Sports Med*.
-- Sette A, Crotty S (2021) Adaptive immunity to SARS-CoV-2 and COVID-19. *Cell* 184(4):861-880.
-- Simon HB (1984) The immunology of exercise: a brief review. *JAMA* 252(19):2735-2738.
-- Simpson RJ, Campbell JP, Gleeson M, Kruger K, Nieman DC, Pyne DB, Turner JE, Walsh NP (2020) Can exercise affect immune function to increase susceptibility to infection? *Exerc Immunol Rev* 26:8-22.
-- Smith A, Thomas M, Kent J, Nicholson K (1998) Effects of the common cold on mood and performance. *Psychoneuroendocrinology* 23:733-739.
-- Snyders C, Pyne DB, Sewry N, Hull JH, Kaulback K, Schwellnus M (2022) Acute respiratory illness and return to sport: a systematic review and meta-analysis by a subgroup of the IOC consensus on 'acute respiratory illness in the athlete'. *Br J Sports Med* 56(4):223-231.
-- Spence L et al. (2007) Incidence, etiology, and symptomatology of upper respiratory illness in elite athletes. *Med Sci Sports Exerc* 39(4):577-586.
-- Steinacker JM, Schellenberg J, Bloch W et al. (2022) Recommendations for return-to-sport after COVID-19: expert consensus. *Dtsch Z Sportmed* 73.
-- Tan AT, Linster M, Tan CW et al. (2021) Early induction of functional SARS-CoV-2-specific T cells associates with rapid viral clearance and mild disease in COVID-19 patients. *Cell Rep* 34(6):108728.
-- Tay MZ, Poh CM, Renia L, MacAry PA, Ng LFP (2020) The trinity of COVID-19: immunity, inflammation and intervention. *Nat Rev Immunol* 20(6):363-374.
-- Zhang B, Grau M, Puta C, Arvidsson D, Arz M, Bocker J et al. (2025) Post-COVID-19 Condition in Track and Field Master Athletes: Severity, Symptoms, and Associations With Quality of Life and C-Reactive Protein Levels. *Scand J Med Sci Sports* 35(7):e70106.
+#### Subacute Phase (hours–days): Myofibrillar Protein Synthesis
+
+mTORC1 is activated via mechanical stress and IGF-1, increasing translation of ribosomal mRNAs for myosin heavy chain (MHC) and actin. The PPARγ/PGC-1α complex amplifies this effect through higher mitochondrial ATP availability. Critically, even short bouts are sufficient to open the anabolic signalling window provided mechanical tension is adequate.
+
+#### Chronic Phase (weeks–months): Satellite Cell Activation & Hypertrophy
+
+Mechanical stress activates satellite cells via Hepatocyte Growth Factor (HGF) and Mechano Growth Factor (MGF). Satellite cells proliferate, differentiate, and fuse with existing muscle fibres, increasing myonuclei number and cross-sectional area. This is the slowest but structurally most durable adaptation.
+
+> **Clinical note (ME/CFS / Post-COVID):** mTORC1 activation through exercise may trigger post-exertional malaise rather than hypertrophy in populations with mitochondrial dysfunction — highlighting the need for wearable-based PEM monitoring as a safeguard.
+
+<Figure src={fig4} srcDark={fig4Dark} alt="Muscle Structure & Function Signaling">
+**Figure 4.** Exercise Snacks — Muscle Structure & Function Signaling. Three temporally staggered phases from acute AMPK/PGC-1α activation through mTORC1-driven protein synthesis to satellite cell–mediated hypertrophy.
+</Figure>
+
+### 4.3 Aerobic Capacity
+
+**Key outcomes:** ↑ Oxygen uptake · ↑ Performance
+
+Aerobic capacity gains from exercise snacks operate through two coupled systems framed by the Fick equation.
+
+#### Fick Equation Framework
+
+$$\dot{V}O_2 = \text{CO} \times (C_aO_2 - C_{\bar{v}}O_2)$$
+
+Exercise snacks act on **both sides**: centrally (cardiac output, CO) and peripherally (arteriovenous oxygen difference, a-vO₂ diff).
+
+#### Central Adaptations
+
+Repeated bouts increase heart rate and stroke volume acutely. Over time, baroreceptor training improves autonomic cardiac regulation (HRV), and cardiac remodelling yields a higher resting stroke volume.
+
+#### Peripheral Adaptations
+
+This is the dominant adaptation pathway for exercise snacks:
+
+- **Mitochondrial biogenesis** (via PGC-1α): higher oxidative capacity per fibre
+- **Capillary angiogenesis** (via VEGF): shorter O₂ diffusion distance
+- **Myoglobin concentration** ↑: intracellular O₂ buffering
+
+Together these widen the a-vO₂ diff — the muscle extracts more O₂ per unit blood flow.
+
+> **Contrast with continuous exercise training**, which primarily raises CO. Exercise snacks disproportionately target the peripheral side — relevant for populations where cardiac adaptation is limited (e.g. deconditioning, autonomic dysfunction in Long COVID).
+
+<Figure src={fig5} srcDark={fig5Dark} alt="Aerobic Capacity Signaling">
+**Figure 5.** Exercise Snacks — Aerobic Capacity Signaling. Central (cardiac output) and peripheral (a-vO₂ diff) adaptations framed by the Fick equation, with exercise snacks disproportionately targeting the peripheral side.
+</Figure>
+
+### 4.4 Immunological Signalling Pathways
+
+**Key outcomes:** ↑ Cytokine release (myokines) · ↑ Transcriptional reprogramming of immune cells
+
+The immunological effect of exercise snacks is mechanistically the most complex domain, connecting muscle, immune system, and gut across three parallel axes — all converging on NF-κB suppression.
+
+#### Axis 1: Muscle as Endocrine Organ (Myokines)
+
+Contracting skeletal muscle secretes a broad spectrum of cytokines (myokines). IL-6 is the most prominent: released transiently from myofibrils, it acts anti-inflammatorily (distinct from the chronically elevated IL-6 in obesity), stimulates IL-10 production, and suppresses TNF-α. IL-15 promotes NK cell proliferation; irisin influences T-cell differentiation. **Kinetics are decisive** — brief transient peaks are immunoprotective, whereas chronically elevated levels are pro-inflammatory.
+
+#### Axis 2: Transcriptional Reprogramming of Immune Cells
+
+Mechanical loading and myokines activate, in immune cells:
+
+- **NF-κB suppression** via IL-10 signalling → ↓ TNF-α, IL-1β
+- **Nrf2 induction** → antioxidant enzymes, HO-1 (competes with NF-κB for co-activators)
+- **M1 → M2 macrophage polarisation** → shift from pro-inflammatory to reparative phenotype
+- **Treg expansion** via IL-10 and TGF-β → immune tolerance
+
+#### Axis 3: Microbiome-Mediated Metabolites
+
+Regular short bouts increase gut microbiome diversity and the production of short-chain fatty acids (SCFAs: butyrate, propionate). SCFAs bind GPR41/GPR43 on immune cells, inhibit HDAC, and epigenetically modulate cytokine production. Butyrate directly suppresses NF-κB in colonocytes and macrophages.
+
+> **Research connection (ME/CFS / Long COVID):** Dysbiosis with reduced SCFA producers (*Faecalibacterium prausnitzii*, *Roseburia*) is consistently reported. Exercise snacks may rehabilitate this axis. The SCFA–NF-κB–EV miRNA triangle is a direct entry point for EV-associated miRNA biomarker studies: exercise snacks could shift EV cargo toward anti-inflammatory miRNA profiles (NF-κB, Nrf2 regulators), measurable and clinically meaningful.
+
+<Figure src={fig6} srcDark={fig6Dark} alt="Immunological Signalling Pathways">
+**Figure 6.** Exercise Snacks — Immunological Signalling Pathways. Three parallel axes (myokines, transcriptional reprogramming, microbiome metabolites) converge on NF-κB suppression and systemic anti-inflammatory effects.
+</Figure>
+
+### 4.5 Interactive Dashboard — Physiological Mechanisms
+
+An interactive HTML dashboard provides a detailed, navigable visualisation of all four physiological domains (energy metabolism, muscle signalling, aerobic capacity, immunological pathways) with animated pathway diagrams, tabbed panels, and integrated source references.
+
+[→ Interactive Dashboard](/dashboards/exercise-snacks) - Exercise Snacks
+
+### 4.6 Summary
+
+| Domain | Primary Outcomes | Central Mediators | Timeframe |
+|---|---|---|---|
+| Energy Metabolism | ↓ Blood glucose, ↓ Triglycerides | AMPK, GLUT4, LPL | Minutes–hours |
+| Muscle Structure | ↑ Strength, ↑ CSA | AMPK, mTORC1, PGC-1α, satellite cells | Hours–months |
+| Aerobic Capacity | ↑ VO₂max, ↑ Performance | PGC-1α, VEGF, Fick CO × a-vO₂ | Weeks–months |
+| Immune Signalling | ↓ Inflammation, ↑ Tolerance | IL-6/IL-10, Nrf2, NF-κB, SCFAs | Hours–weeks |
+
+---
+
+## 5 Conclusion
+
+Exercise Snacks are a highly promising, time-efficient strategy for improving cardiometabolic health, particularly in inactive individuals. They have local and systemic effects on energy metabolism, musculature, cardiovascular, cardiometabolic and immunological (dys)regulation. They provide a low-threshold entry into physical activity and are characterised by brief strenuous exertions that can be integrated into everyday life. Clinical practice could benefit greatly from the minimal effort with highly effective results (see Fig. 3). It should be noted that in pre-existing conditions (e.g. type 2 diabetes), Exercise Snacks may have an additive effect to medication (e.g. insulin) and often do not produce significant effects on weight loss alone through movement "snacks" without dietary intervention. For sustainable weight reduction, a combination is recommended: movement (including Exercise Snacks), controlled nutrition, and, where applicable, behavioural and environmental interventions.
+
+---
+
+## 6 Example Exercise Snack Protocol
+
+**Example Exercise Snack protocol for the patient presented (see Introduction)**
+
+- This protocol is designed to maximise the health benefit in a time-efficient manner, supported by current research findings.
+- Each one-minute Exercise Snack should be performed at high to very high intensity. The target is a maximal heart rate of ≥75–85% (211 − 0.65 × age; for calculation see also: https://www.ntnu.edu/cerg/hrmax) or an RPE scale of 7–10 (CR10 scale; 7–10 corresponds to "very hard" to "maximal" exertion; you should feel like you are working hard and not be able to speak in full sentences).
+- Rest phases serve recovery and should be low-intensity or passive.
+
+| Step/Exercise | Duration | Exercise Example | Intensity Recommendation |
+|---|---|---|---|
+| Exercise 1 | 1 min | Stair climbing | Strong to very strong: ≥75–85% of maximal heart rate, ≥85% VO₂max, RPE 7–10 (CR10), "as intense as possible" |
+| Pause | 45 min | Passive recovery | Low (active or passive recovery) |
+| Exercise 2 | 1 min | Squats | Strong to very strong: ≥75–85% of maximal heart rate, ≥85% VO₂max, RPE 7–10 (CR10), "as intense as possible" |
+| Pause | 45 min | Passive recovery | Low (active or passive recovery) |
+| Exercise 3 | 1 min | Brisk walking (uphill) | Strong: ≥75% of maximal heart rate, RPE 7–8 (CR10), "as fast as possible" |
+| Pause | 45 min | Passive recovery | Low (active or passive recovery) |
+| Exercise 4 | 1 min | Step-ups | Strong to very strong: ≥75–85% of maximal heart rate, RPE 7–10 (CR10) |
+| Pause | 45 min | Passive recovery | Low (active or passive recovery) |
+| Exercise 5 | 1 min | Jumping jacks | Strong to very strong: ≥75–85% of maximal heart rate, RPE 7–10 (CR10) |
+| Pause | 45 min | Passive recovery | Low (active or passive recovery) |
+| Exercise 6 | 1 min | Lunges | Strong to very strong: ≥75–85% of maximal heart rate, RPE 7–10 (CR10) |
+
+RPE: Rating of Perceived Exertion (Rating of perceived exertion on the Borg CR-10 Scale [32]), Borg CR10 Scale (Category rating 0–10: 0 = no exertion at all, 2 = light, 5 = heavy, 7 = very heavy, 10 = extremely strenuous / nearly maximal)
+
+---
+
+## 7 Interactive Dashboard — Exercise Effects on Blood & Serum Parameters
+
+An interactive HTML dashboard outlining metabolic, inflammatory and trace elements.
+
+[→ Interactive Dashboard](/dashboards/exercise-effects) - Exercise Effects on Blood & Serum Parameters
+
+---
+
+## References
+
+[1] Shen MM. Exercise snacks a novel strategy to improve cardiometabolic health. Exerc Sport Sci Rev. 2022. doi: 10.1249/jes.0000000000000275.
+
+[2] Francois ME, Little JP, Bookman E, Jakovljevic DG, Yoshida Y, McGlory C, et al. 'Exercise snacks' before meals a novel strategy to improve glycaemic control in individuals with insulin resistance. Diabetologia. 2014;57:1437-1445. doi: 10.1007/S00125-014-3244-6.
+
+[3] Wang T, Laher I, Li S. Exercise snacks and physical fitness in sedentary populations. Sports Med Health Sci. 2024. doi: 10.1016/j.smhs.2024.02.006.
+
+[4] Islam H, Gibala MJ, Little JP. Exercise snacks: a novel strategy to improve cardiometabolic health. Exerc Sport Sci Rev. 2022 Jan 1;50(1):31-37. doi: 10.1249/JES.0000000000000275. PMID: 34669625.
+
+[5] Chen J, Zhang Y, Li X, Wang Y, Liu H, et al. The effectiveness of exercise snacks as a time-efficient treatment for improving cardiometabolic health in adults: a systematic review and meta-analysis. Front Cardiovasc Med. 2025. doi: 10.3389/fcvm.2025.1643153.
+
+[6] Stamatakis E, Ahmadi MN, Gill JMR, Thøgersen-Ntoumani C, Gibala MJ, Doherty A, Hamer M. Association of wearable device-measured vigorous intermittent lifestyle physical activity with mortality. Nat Med. 2022 Dec;28(12):2521-2529. doi: 10.1038/s41591-022-02100-x. PMID: 36482104. PMCID: PMC9800274.
+
+[7] Carter S, Solomon TPJ. Exercise-induced improvements in postprandial glucose response are blunted by pre-exercise hyperglycemia: a randomized crossover trial in healthy individuals. Front Endocrinol (Lausanne). 2020. doi: 10.3389/FENDO.2020.566548.
+
+[8] Wan K, Lee S, Chen J, et al. Effects of exercise snacks on cardiometabolic health and body composition in adults: a systematic review and meta-analysis. Scand J Med Sci Sports. 2025. doi: 10.1111/sms.70114.
+
+[9] Metsios GS, Kitas GD. Physical activity, exercise and rheumatoid arthritis: effectiveness, mechanisms and implementation. Best Pract Res Clin Rheumatol. 2018. doi: 10.1016/J.BERH.2019.03.013.
+
+[10] Costa Pereira LV, Silva J, Oliveira M, et al. Cardiometabolic and cellular adaptations to multiple vs single daily HIIT sessions in Wistar rats: impact of short-term detraining. Metabolites. 2024. doi: 10.3390/metabo14080447.
+
+[11] Lawrence RD. The effect of exercise on insulin action in diabetes. Br Med J. 1926 Apr 10;1(3406):648-650. doi: 10.1136/bmj.1.3406.648. PMID: 20772477. PMCID: PMC2523697.
+
+[12] Roy D, Marette A. Exercise induces the translocation of GLUT4 to transverse tubules from an intracellular pool in rat skeletal muscle. Biochem Biophys Res Commun. 1996 Jun 5;223(1):147-52. doi: 10.1006/bbrc.1996.0860. PMID: 8660361.
+
+[13] Flores-Opazo M, McGee SL, Hargreaves M. Exercise and GLUT4. Exerc Sport Sci Rev. 2020 Jul;48(3):110-118. doi: 10.1249/JES.0000000000000224. PMID: 32568924.
+
+[14] Schnurr TM, Reynolds AJ, Komac AM, Duffy LK, Dunlap KL. The effect of acute exercise on GLUT4 levels in peripheral blood mononuclear cells of sled dogs. Biochem Biophys Rep. 2015 Jul 1;2:45-49. doi: 10.1016/j.bbrep.2015.05.002. PMID: 26339686. PMCID: PMC4554329.
+
+[15] Bellini A, Rossi F, Bianchi M, et al. Exercise prescription for postprandial glycemic management. Nutrients. 2024. doi: 10.3390/nu16081170.
+
+[16] Perkin OJ, McGuigan PM, Stokes KA. Exercise snacking to improve muscle function in healthy older adults: a pilot study. J Aging Res. 2019 Oct 3;2019:7516939. doi: 10.1155/2019/7516939. PMID: 31687210. PMCID: PMC6794984.
+
+[17] Babir FJ, Smith L, Patel R, et al. Technology-enabled exercise 'snacks' are feasible to perform in a real-world setting: a randomized controlled trial. Scand J Med Sci Sports. 2025. doi: 10.1111/sms.70117.
+
+[18] Bull FC, Al-Ansari SS, Biddle S, Borodulin K, Buman MP, Cardon G, Carty C, Chaput JP, Chastin S, Chou R, Dempsey PC, DiPietro L, Ekelund U, Firth J, Friedenreich CM, Garcia L, Gichu M, Jago R, Katzmarzyk PT, Lambert E, Leitzmann M, Milton K, Ortega FB, Ranasinghe C, Stamatakis E, Tiedemann A, Troiano RP, van der Ploeg HP, Wari V, Willumsen JF. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. Br J Sports Med. 2020 Dec;54(24):1451-1462. doi: 10.1136/bjsports-2020-102955. PMID: 33239350. PMCID: PMC7719906.
+
+[19] Slavich GM. Understanding inflammation, its regulation, and relevance for health: a top scientific and public priority. Brain Behav Immun. 2015 Mar;45:13-14. doi: 10.1016/j.bbi.2014.10.012. PMID: 25449576. PMCID: PMC4361086.
+
+[20] Netea MG, Balkwill F, Chonchol M, Cominelli F, Donath MY, Giamarellos-Bourboulis EJ, Golenbock D, Gresnigt MS, Heneka MT, Hoffman HM, Hotchkiss R, Joosten LAB, Kastner DL, Korte M, Latz E, Libby P, Mandrup-Poulsen T, Mantovani A, Mills KHG, Nowak KL, O'Neill LA, Pickkers P, van der Poll T, Ridker PM, Schalkwijk J, Schwartz DA, Siegmund B, Steer CJ, Tilg H, van der Meer JWM, van de Veerdonk FL, Dinarello CA. A guiding map for inflammation. 2017 Jul 19;18(8):826-831. doi: 10.1038/ni.3790. PMID: 28722720. PMCID: PMC5939996.
+
+[21] GBD 2017 Causes of Death Collaborators. Global, regional, and national age-sex-specific mortality for 282 causes of death in 195 countries and territories, 1980-2017: a systematic analysis for the Global Burden of Disease Study 2017. Lancet. 2018 Nov 10;392(10159):1736-1788. doi: 10.1016/S0140-6736(18)32203-7. PMID: 30496103. PMCID: PMC6227606.
+
+[22] Soltani N, Ghasemi A, Asadi M, et al. The exercise training modulatory effects on the obesity-induced immunometabolic dysfunctions. Diabetes Metab Syndr Obes. 2020. doi: 10.2147/DMSO.S234992.
+
+[23] Sohail MU, Yassine HM, Sohail A, et al. Impact of physical exercise on gut microbiome, inflammation, and the pathobiology of metabolic disorders. Rev Diabet Stud. 2019. doi: 10.1900/RDS.2019.15.35.
+
+[24] Radom-Aizik S, Zaldivar F, Haddad F, Cooper DM. Impact of brief exercise on circulating monocyte gene and microRNA expression: implications for atherosclerotic vascular disease. Brain Behav Immun. 2014. doi: 10.1016/j.bbi.2014.01.003.
+
+[25] Haunhorst S, Bloch W, Ringleb M, Fennen L, Wagner H, Gabriel HHW, Puta C. Acute effects of heavy resistance exercise on biomarkers of neuroendocrine-immune regulation in healthy adults: a systematic review. Exerc Immunol Rev. 2022;28:36-52. PMID: 35452397.
+
+[26] Ringleb M, Javelle F, Haunhorst S, Bloch W, Fennen L, Baumgart S, Drube S, Reuken PA, Pletz MW, Wagner H, Gabriel HHW, Puta C. Beyond muscles: investigating immunoregulatory myokines in acute resistance exercise - a systematic review and meta-analysis. FASEB J. 2024 Apr 15;38(7):e23596. doi: 10.1096/fj.202301619R. PMID: 38597350.
+
+[27] Kliszczewicz B, Snarr RL, Esco MR, et al. Acute inflammatory responses to high-intensity functional training programming: an observational study. J Hum Sport Exerc. 2019. doi: 10.14198/JHSE.2019.144.18.
+
+[28] Radom-Aizik S, Zaldivar F, Haddad F, Cooper DM. Impact of brief exercise on circulating monocyte gene and microRNA expression: implications for atherosclerotic vascular disease. Brain Behav Immun. 2014. doi: 10.1016/j.bbi.2014.01.003.
+
+[29] Khalafi M, Mohebbi H, Symonds ME, et al. The effects of exercise training on inflammatory markers in children and adolescents: a systematic review and meta-analysis. Physiol Behav. 2024. doi: 10.1016/j.physbeh.2024.114524.
+
+[30] Guo Y, Qian HZ, Xu X, Liu Q. Effects of different exercise modalities on inflammatory markers in the obese and overweight populations: unraveling the mystery of exercise and inflammation. Front Physiol. 2024. doi: 10.3389/fphys.2024.1405094.
+
+[31] Liu Y, Wang Y, Chen X, et al. Calorie restriction with exercise intervention improves inflammatory response in overweight and obese adults: a systematic review and meta-analysis. Front Physiol. 2021. doi: 10.3389/FPHYS.2021.754731.
+
+[32] Hareendran A, Leidy NK, Monz BU, Winnette R, Becker K, Mahler DA. Proposing a standardized method for evaluating patient report of the intensity of dyspnea during exercise testing in COPD. Int J Chron Obstruct Pulmon Dis. 2012;7:345-55. doi: 10.2147/COPD.S29571. Epub 2012 May 28. PMID: 22745534; PMCID: PMC3379870.

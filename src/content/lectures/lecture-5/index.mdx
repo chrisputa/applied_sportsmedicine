@@ -2,10 +2,9 @@
 title: ACL Return To Competition Insights
 description: Return-to-sport after ACL injury is shifting from time-only rules toward multifactorial, criterion-based decisions that combine clinical healing, ≥90% limb symmetry on strength and hop tests, validated psychological readiness scores, sport-specific preparation, and delayed timelines (commonly ≥8–9 months). Shared decision-making and layered, sport-specific reintegration are recommended.
 draft: false
-tags:
-  - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 ## Table of Contents
@@ -36,6 +35,8 @@ References: time prevalence and early RTS findings [1]; Delaware objective crite
 
 Functional testing is central to criterion-based clearance; common batteries include quadriceps strength, multiple hop tests, and movement-quality assessments, with limb symmetry index thresholds frequently used as pass criteria. Below is a concise comparison of common tests, reported thresholds, and typical clinical use.
 
+<Table>
+
 | Test domain | Typical measures | Common threshold or pass criterion | Evidence source |
 |---|---:|---:|---|
 | **Quadriceps strength** | Isokinetic peak torque, max voluntary isometric/quadriceps force | **≥90% LSI** or normalized torque benchmarks cited in test batteries | [5] [2] |
@@ -43,6 +44,11 @@ Functional testing is central to criterion-based clearance; common batteries inc
 | **Movement quality** | Landing Error Scoring System (LESS), qualitative movement analysis | LESS and movement-quality screening recommended as adjuncts; pass thresholds vary (eg, LESS ≤5 used in some protocols) | [5] |
 | **Patient reported outcomes** | IKDC, KOS-ADLS, GRS, ACL‑RSI | PRO thresholds (eg, KOS-ADLS ≥90%, ACL‑RSI cutoffs reported) often included alongside physical tests | [2] [5] |
 | **Multi-test battery** | Combination of strength, ≥2 dynamic tests, PROs, clinical exam | Passing multi-domain batteries (strength + ≥2 dynamic tests + psych readiness) reduces heterogeneity in outcomes and is commonly recommended | [4] [5] |
+
+<Fragment slot="caption">
+Functional return-to-sport test domains, typical measures, and common pass criteria.
+</Fragment>
+</Table>
 
 - **Implementation note**  Clinical programs commonly use a battery requiring **≥90% LSI** for quadriceps and hop tests as a core pass criterion, supplemented by absence of effusion/full ROM and PROM thresholds [2] [5].  
 - **Limitations**  Although ≥90% LSI is widely used, current evidence does not prove that meeting these criteria guarantees protection from reinjury; test batteries frequently fail to predict safe RTS with high accuracy [1] [5].

@@ -2,10 +2,9 @@
 title: RTC Test Battery – Longitudinal Comparison and Clinical Interpretation
 description: A comprehensive case study on interpreting Return to Competition (RTC) test battery results across two time points. Covers hop test symmetry (LSI), Y-Balance Test, Star Excursion Balance Test, Cumberland Ankle Instability Tool, I-PRRS psychological readiness, Manchester Instability Score, normalized reach distances, and traffic light classification for clinical decision-making in ankle injury rehabilitation.
 draft: false
-tags:
-  - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 ## Table of Contents
@@ -32,11 +31,18 @@ import { Note } from '../../../components/MarginNote/index.js';
 
 This lecture presents a longitudinal case study of athlete xyz18 (KS224), a 22-year-old male soccer player who sustained a right ankle injury on 31.08.2024. Two Return to Competition (RTC) test battery assessments were performed at different rehabilitation stages and are compared systematically to illustrate clinical interpretation, threshold-based classification, and evidence-based decision-making for return-to-sport clearance.
 
+<Table>
+
 | Parameter | Test 1 | Test 2 |
 |---|---|---|
 | **Date** | 15.11.2024 | 13.02.2025 |
 | **Days post-injury** | 76 | 166 |
 | **Rehabilitation stage** | Early | Late |
+
+<Fragment slot="caption">
+Timing of the two RTC test battery assessments for athlete xyz18 (KS224).
+</Fragment>
+</Table>
 
 The RTC test battery comprises functional hop tests, dynamic balance assessments, self-reported questionnaires for ankle instability, psychological readiness, and pain, providing a multidimensional assessment framework for return-to-sport decisions.
 
@@ -120,11 +126,18 @@ YBT and SEBT reach distances are normalized to leg length (measured as left 86.5
 
 Each test domain is classified using a traffic light system (green, yellow, red) based on established clinical thresholds. This provides a rapid visual summary of the athlete's readiness across all domains.
 
+<Table>
+
 | Assessment | Test 1 | Test 2 |
 |---|---|---|
 | **Green (normal)** | 0 / 16 domains | 14 / 16 domains |
 | **Yellow (observation)** | 0 / 16 domains | 1 / 16 domains |
 | **Red (abnormal)** | 16 / 16 domains | 1 / 16 domains |
+
+<Fragment slot="caption">
+Traffic light classification across the 16 test domains at both assessments.
+</Fragment>
+</Table>
 
 The improvement from 0 green domains at Test 1 to 14 green domains at Test 2 illustrates the substantial rehabilitation progress over the 90-day interval between assessments. The remaining non-green domains relate to CAIT ankle instability, which requires continued attention.
 
@@ -142,6 +155,8 @@ The follow-up assessment demonstrates marked improvement across nearly all domai
 
 ### Overall Assessment and Recommendations
 
+<Table>
+
 | Domain | Test 1 | Test 2 | Assessment |
 |---|---|---|---|
 | Hop-Test Symmetry | LSI 76–82% | All LSI > 90% | Criterion met |
@@ -150,6 +165,11 @@ The follow-up assessment demonstrates marked improvement across nearly all domai
 | CAIT (right) | 13 pts | 27 pts | Improved, continue monitoring |
 | I-PRRS | 35.0 | 95.8 | Readiness confirmed |
 | MIS | 25 | 0 | Pain-free |
+
+<Fragment slot="caption">
+Summary of RTC battery domains across both test points with clinical assessment.
+</Fragment>
+</Table>
 
 - Good functional symmetry and psychological readiness support a gradual increase in training load.
 - CAIT scores on the injured side warrant continued proprioceptive training.
